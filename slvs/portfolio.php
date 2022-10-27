@@ -38,7 +38,7 @@ include("./includer/db-connect.php");
                 </div>  
             </div>
         </div>
-        // <?php
+        // <?php.
         // $reponse = $bdd->query('SELECT * FROM portfolio ORDER BY `ID` ASC');
         // while ($donnes = $reponse->fetch()){
         //         echo '<div class="card">';
