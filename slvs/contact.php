@@ -24,14 +24,14 @@
         <div class="social_bloc">
             <img class="social_img" src="./asset/img/contact/social/svg/instagram.svg">
             <h1 class="social_title" id="instagram">Instagram</h1>
-            <p class="social_desc">Passioné de photographie, je poste certaines de mes creations ici. C'est aussi un moyen de me contacter grâce aux instagrams directs, les messages privés.</p>
-            <a href="https://instagram.com/cmbhugo" class="social_link" target="_BLANK">Visiter</a> 
+            <p class="social_desc"> J'y poste ma vie. C'est aussi un moyen de me contacter grâce aux instagrams directs ou au messages privés.</p>
+            <a href="https://instagram.com/_emeake" class="social_link" target="_BLANK">Visiter</a> 
         </div>
 
         <div class="social_bloc">
-            <h1 class="social_title" id="twitter">Twitter</h1>
-            <p class="social_desc">Pour suivre l'acutalité des différentes ressources que j'utilise. C'est aussi un moyen de rentrer en contact avec moi, encore une fois grace aux messages privés.</p>
-            <img class="social_img" src="./asset/img/contact/social/svg/twitter.svg">
+            <h1 class="social_title" id="discord">Discord</h1>
+            <p class="social_desc"> C'est également un moyen facile et rapide de rentrer en contact avec moi, encore une fois grace aux messages privés ou appel privés.</p>
+            <img class="social_img" src="./asset/img/contact/social/svg/discord.svg">
             <a href="https://twitter.com/silvus_tv" class="social_link" target="_BLANK">Visiter</a>
         </div>
         <div class="social_bloc">
