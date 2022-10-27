@@ -1,0 +1,256 @@
+/*      Général      */
+.pages_nav{
+    visibility: hidden;
+}
+.modal-container-more{
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+.modal-container-more{
+    z-index: 3;
+    visibility: visible;
+}
+.overlay{
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #333333d3;
+}
+.modal-more{
+    z-index: 3;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 600px;
+    width: 95%;
+    max-width: 700px;
+    padding: 50px;
+    color: black;
+    font-family: Raleway, sans-serif;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    background-image: url(../../asset/img/noise2.png);
+    overflow: hidden;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 5px 5px 30px rgba(0,0,0,0.1);
+    
+}
+.modal-more form{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+/*      Left Part       */
+.left{
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 22%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+}
+.left img{
+    position: absolute;
+    top: 10px;
+    width: 122px;
+    transform: translate(-50%);
+    left: 50%;
+}
+.left .dateMaj{
+    font-size: 20px;
+    font-weight: 500;
+    position: absolute;
+    top: 280px;
+    right: 0;
+    width: 98%;
+    text-align: center;
+}
+.left .datePub{
+    font-size: 20px;
+    font-weight: 500;
+    position: absolute;
+    top: 175px;
+    right: 0;
+    width: 98%;
+    text-align: center;
+}
+.left .dateMaj input, .datePub input{
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 9px;
+    border: transparent;
+    font-size: 18px;
+    background-color: rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(0,0,0,0.5);
+    color: white;
+}
+.left .dateMaj input:active, .datePub input:active{
+    border: transparent;
+}
+.left .tech{
+    font-size: 20px;
+    font-weight: 500;
+    position: absolute;
+    bottom: 3.5%;
+    right: 0;
+    width: 98%;
+    text-align: center;
+    align-items: center;
+    display: block;
+}
+ion-icon.on, i.on{
+    color: rgba(255, 255, 255, 1);
+    font-size: 25px;
+    height: 25px;
+    width: 25px;
+}
+ion-icon.off, i.off{
+    color: rgba(255, 255, 255, 0.2);
+    font-size: 25px;
+    height: 25px;
+    width: 25px;
+}
+
+.left .tech .Langages{
+    font-size: 18px;
+    position: absolute;
+}
+table{
+    width: 100%;
+    align-items: center;
+}
+td{
+    padding: 4px;
+    color: white;
+}
+td.icon.no{
+    visibility: visible;
+    width: 100%;
+}
+td.icon.yes ion-icon, td.icon.yes i{
+    visibility: hidden;
+    width: 0;
+}
+td.checkbox.no input, td.Title.no label{
+    font-size: 0;
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+
+/*      Right Part      */
+.right{
+    position: absolute;
+    top: 0;
+    left: 22%;
+    width: 88%;
+    height: 100%;
+}
+.right h1{
+    position: absolute;
+    transform: translate(-50%);
+    left: 37%;
+    font-weight: 650;
+}
+.textContainer a{
+    position: absolute;
+    bottom: 2%;
+    transform: translate(-50% );
+    left: 45%;
+    font-size: 18px;
+    display: inline-block;
+    padding: 8px 20px;
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    cursor: pointer;
+    color: #4790FD;
+    border: #4790FD solid 2px;
+
+}
+.textContainer textarea{
+    
+    width: 96%;
+    max-width: 96%;
+    margin-left: 2%;
+    height: 33%;
+    max-height: 33%;
+    border: transparent;
+    font-size: 16.5px;
+    background-color: rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(0,0,0,0.5);
+    cursor: default;
+    color: white;
+}
+.textContainer textarea:active{
+    border: transparent;
+}
+.textContainer h2{
+    margin-left: 2%;
+}
+.right .textContainer{
+    position: absolute;
+    top: 10%;
+    width: 88%;
+    height: 90%;
+}
+/*      Other      */
+.close-modal-more{
+    z-index: 2;
+    color: white;
+    text-decoration: none;
+    right: 2%;
+    top: 2%;
+    cursor: pointer;
+    position: absolute;
+    display: inline-block;
+}
+.save{
+    font-size: 25px;
+    filter: invert(0);
+    z-index: 2;
+    right: 3%;
+    bottom: 3%;
+    cursor: pointer;
+    position: absolute;
+    display: inline-block;
+    background-color: transparent;
+    border: transparent;
+    color: #4790FD;
+}
+.save.no{
+    visibility: hidden;
+}
+/* class no*/
+
+.datePubValue.no, .dateMajValue.no{
+
+    filter: invert(1);
+    cursor: default;  
+}
+ul.no{
+    visibility: hidden;
+}
+textarea.no{
+    resize : none;
+    border: transparent;
+    background-color: transparent;
+    cursor: default;
+}
+button.no{
+    visibility: hidden;
+}

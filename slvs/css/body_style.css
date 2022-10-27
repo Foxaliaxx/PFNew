@@ -1,0 +1,16 @@
+body{
+    background: #202735;
+    background: radial-gradient(circle,#1a2436 0%, #192949 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Raleway, sans-serif;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+html {
+    scroll-behavior: smooth;
+  }

@@ -1,0 +1,227 @@
+#social{
+    cursor: default;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.social_link{
+    width: 0;
+    opacity: 0;
+    color: white;
+    text-decoration: none;
+}
+img{
+    width: 50px;
+}
+h1{
+    position: absolute;
+    width: 0;
+    opacity: 0;
+}
+a{
+    text-decoration: none;
+}
+#instagram{
+    color: #d6249f;
+}
+#twitter{
+    color: #1DA1F2;
+}
+#twitch{
+    color: #9146FF;
+}
+#youtube{
+    color: #FF0000;
+}
+.social_desc{
+    color: white;
+    position: absolute;
+    width: 0;
+    opacity: 0;
+}
+.social_bloc{
+    margin: 25px;
+    width: 100px;
+    height: 100px;  
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20%;
+    border-top: 1px rgba(255, 255, 255, 0.5) solid;
+    border-left: 1px rgba(255, 255, 255, 0.5) solid; 
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(20px);
+    background-image: url(../../asset/img/noise2.png);
+    transition: 200ms;
+}
+.social_img_second{
+    opacity: 0;
+    width: 0;
+    position: absolute;
+}
+.social_bloc:hover{
+    transition: 200ms;
+    width: 300px;
+    height: 400px;
+    border-radius: 10%;
+}
+.social_bloc:hover img{
+    position: absolute;
+    transform: translateY(-50%);
+    right: -5%;
+    top: 15%;
+    width: 160px;
+    opacity: 0.05;
+}
+.social_bloc:hover h1{
+    position: absolute;
+    width: auto;
+    opacity: 1;
+    font-size: 35px;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 2%;
+    animation: Title 200ms ease-in-out;
+}
+.social_bloc:hover .social_desc{
+    opacity: 1;
+    font-size: 20px;
+    width: 95%;
+}
+.social_bloc:hover .social_link{
+    opacity: 1;
+    width: auto;
+    bottom: 10%;
+    position: absolute;
+    padding: 8px 20px;
+    text-decoration: none;
+    font-weight: 500;
+    color: #4790FD;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    border: #4790FD solid 2px;
+    animation: URL 200ms ease-in-out;
+}
+@keyframes Title {
+    0%{
+        position: absolute;
+        top: -50%;
+    }
+    100%{
+        position: absolute;
+        top: 2%;
+    }
+}
+@keyframes URL{
+    0%{
+        position: absolute;
+        bottom: -50%;
+    }
+    100%{
+        position: absolute;
+        bottom: 10%;
+    }
+}
+#social .mail_clicker{
+    opacity: 0;
+    width: 0;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 40px;
+    transform: translateX(-50%);
+    left: 50%;
+    animation: Opacity 6s ease;
+    
+}
+.mail_arrow{
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    filter: invert(1);
+    animation: Mouvement 2s infinite ease-in-out;
+    
+
+}
+.mail_message{
+    top: 40px;
+    position: relative;
+    color: white;
+}
+@keyframes Mouvement{
+    0%{
+        bottom: 10%;
+    }
+    50%{
+        bottom: 32%;
+    }
+    100%{
+        bottom: 10%;
+    }
+}
+@keyframes Opacity{
+    0%{
+        width: auto;
+        opacity: 0;
+    }
+    6%{
+        opacity: 0.85;
+    }
+    84%{
+        width: auto;
+        opacity: 0.85; 
+    }
+    100%{
+        width: auto;
+        opacity: 0;
+    }
+}
+.mail_icon{
+    filter: invert(1);
+    width: 25px;
+    transition: 200ms;
+}
+.mail_clicker_box:hover .mail_icon{
+    filter: invert(0);
+}
+.mail_clicker_box{
+    z-index: 2;
+    opacity: 1;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    padding: 15px;
+    margin: 25px; 
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20%;
+    border-top: 1px rgba(255, 255, 255, 0.5) solid;
+    border-left: 1px rgba(255, 255, 255, 0.5) solid; 
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(20px);
+    background-image: url(../../asset/img/noise2.png);
+    animation: Opacity-block 6s ease;
+}
+@keyframes Opacity-block{
+    0%{
+        opacity: 0;
+    }
+    84%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

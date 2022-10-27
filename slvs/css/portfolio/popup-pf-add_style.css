@@ -1,0 +1,162 @@
+.modal-container-add{
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+.modal-container-add.active{
+    z-index: 10;
+    visibility: visible;
+}
+.overlay{
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #333333d3;
+}
+.modal{
+    z-index: 10;
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 400px;
+    width: 95%;
+    max-width: 400px;
+    padding: 50px;
+    color: black;
+    font-family: Raleway, sans-serif;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    background-image: url(../../asset/img/noise2.png);
+    overflow: hidden;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 5px 5px 30px rgba(0,0,0,0.1);
+    
+}
+.text{
+    top: -10px;
+    width: 100%;
+    height: 300px;
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+}
+.modal form{
+    position: absolute;
+    top: 100px;
+    width: 90%;
+}
+.modal span{
+    width: 90%;
+    left: 5%;
+}
+.modal label{
+    position: absolute;
+    left: 0;
+}
+.modal .input-txt{
+    position: absolute;
+    right: 10%;
+    width: 60%;
+    height: 25px;
+    color: white;
+    padding: 10px;
+    font-size: 15px;
+    background: transparent;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    border-top: 1px rgba(255, 255, 255, 0.5) solid;
+    border-left: 1px rgba(255, 255, 255, 0.5) solid; 
+}
+.modal .checkbox{
+    position: absolute;
+    left: 30%;
+    width: 20px;
+    height: 20px;
+}
+.modal textarea{
+    position: absolute;
+    left: 0;
+    height: 125px;
+    width: 90%;
+    max-width: 90%;
+    max-height: 150px;    
+    color: white;
+    padding: 10px;
+    font-size: 15px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    border-top: 1px rgba(255, 255, 255, 0.5) solid;
+    border-left: 1px rgba(255, 255, 255, 0.5) solid;
+}
+.modal .title{
+    width: 75%;
+    font-size: larger;
+    margin-top: 50px;
+}
+.modal .desc-span .caracteres{
+    position: relative;
+    right: 0px;
+    bottom: 0px;
+}
+.modal #textarea_count{
+    font-size: 15px;
+    position: absolute;
+    top: 71%;
+    right: 50px;
+    color: white;
+}
+.modal select{
+    position: absolute;
+    left: 0;
+    text-align: center;
+    background: transparent;
+    color: white;
+    border: transparent;
+    border-radius: 5px;
+}
+.close-modal{
+    transform: translate(-50%);
+    left: 50%;
+    bottom: 10px;
+    cursor: pointer;
+    position: absolute;
+    width: 92%;
+    display: inline-block;
+    padding: 8px 20px;
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    background-color: transparent;
+    color: #e00b0b;
+    border: #e00b0b solid 2px;
+}
+.add{
+    transform: translate(-50%);
+    left: 50%;
+    bottom: 55px;
+    cursor: pointer;
+    position: absolute;
+    width: 92%;
+    display: inline-block;
+    padding: 8px 20px;
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    background-color: transparent;
+    color: #4790FD;
+    border: #4790FD solid 2px;
+}

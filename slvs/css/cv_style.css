@@ -1,0 +1,16 @@
+body{
+    overflow: hidden;
+}
+embed{
+    margin-top: 5%;
+    height: 90vh;
+    width: 30vw;
+    background-color: transparent;
+    
+}
+a.cv-link{
+    position: absolute;
+    color: white;
+    left: 27%;
+    top: 12%;
+}
