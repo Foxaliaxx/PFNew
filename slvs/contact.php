@@ -29,8 +29,8 @@
         </div>
 
         <div class="social_bloc">
-            <h1 class="social_title" id="twitter">Twitter</h1>
-            <p class="social_desc">Pour suivre l'acutalité des différentes ressources que j'utilise. C'est aussi un moyen de rentrer en contact avec moi, encore une fois grace aux messages privés.</p>
+            <h1 class="social_title" id="discord">Discord</h1>
+            <p class="social_desc"> C'est aussi un moyen de rentrer en contact avec moi, encore une fois grace aux messages privés.</p>
             <img class="social_img" src="./asset/img/contact/social/svg/discord.svg">
             <a href="https://twitter.com/silvus_tv" class="social_link" target="_BLANK">Visiter</a>
         </div>
